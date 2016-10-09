@@ -1,0 +1,10 @@
+<ul>
+    <li *ngFor="let blog of blogList">
+        <h3>
+            <span>"{{blog.title}}"</span>
+            
+            <a class="view-detail" alt="click to view detail" (click)="viewDetail(blog)">Click to Read</a>
+        </h3>
+                
+    </li>
+</ul>

@@ -1,0 +1,30 @@
+<button class="btn btn-large btn-primary" (click)="goBack()">
+    <strong>Back</strong>
+</button>
+
+
+<h1> {{selectedBlog.title}}</h1>
+<hr>
+
+<p>
+Author: 
+{{selectedBlog.author}}
+</p>
+
+<p *ngFor='let detail of selectedBlog.details'>
+    {{detail}}
+</p>
+<p>{{selectedBlog.summary}}</p>
+<p>
+    References:
+    <li *ngFor='let reference of selectedBlog.references'>
+        {{reference}}
+    </li>
+</p>
+<p>
+    Further reading:
+    <li *ngFor='let furtherReading of selectedBlog.furtherReadings'>
+        {{furtherReading}}
+    </li>
+</p>
+
